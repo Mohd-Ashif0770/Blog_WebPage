@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background-color: black;
+  font-family: "Montserrat", serif;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: 10px solid rgb(58, 58, 139);
+}
+
+.head-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  /* background-color: rgba(221, 215, 215, 0.641) */
+}
+
+.nav-option {
+  display: flex;
+  gap: 7rem;
+}
+.nav-option a {
+  opacity: 0.7;
+}
+.nav-option a:hover {
+  opacity: 1;
+}
+.head-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.left-nav a {
+  font-size: 1.5rem;
+  color: rgb(70, 63, 63);
+}
+
+.right-nav {
+  display: flex;
+  gap: 1rem;
+}
+.right-nav a {
+  font-size: 1.5rem;
+  color: rgb(70, 63, 63);
+}
+
+.tranding-btn {
+  display: flex;
+  justify-content: center;
+}
+.tranding-btn button {
+  background-color: rgb(60, 132, 191);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+  box-shadow: 2px 4px 5px black;
+}
+.tranding-btn button:hover {
+  background-color: rgb(73, 118, 215);
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-around;
+}
+.flex2 {
+  margin-bottom: 5rem;
+}
+.card1 {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px black;
+  transition: all 0.3s linear;
+  padding: 1rem;
+}
+.hamburger img {
+  height: 2rem;
+
+}
+.hamburger{
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+  .flex1 {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .left-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .right-nav {
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+}
+
+.cat-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card1:hover {
+  transform: scale(1.1);
+}
+.card1 a {
+  width: fit-content;
+  background-color: rgb(38, 144, 210);
+  color: white;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+#humor {
+  background-color: orange;
+}
+#discover {
+  background-color: rgb(160, 69, 168);
+}
